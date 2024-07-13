@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import os
 
-from text_to_speech_python.constants import *
+from constants import *
 
 CURRENT_DIR=os.getchwd()
 

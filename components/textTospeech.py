@@ -1,7 +1,7 @@
-from text_to_speech_python.exception import TTSException
-from text_to_speech_python.logger import logger
-from text_to_speech_python.entity.config_entity import TTSConfig
-from text_to_speech_python.constants import TEXT_FILE_NAME,CURRENT_TIME_STAMP
+from exception import TTSException
+from logger import logger
+from entity.config_entity import TTSConfig
+from constants import TEXT_FILE_NAME,CURRENT_TIME_STAMP
 from gtts import gTTS
 import sys
 import os
