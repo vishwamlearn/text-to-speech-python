@@ -3,7 +3,7 @@ import os
 
 from constants import *
 
-CURRENT_DIR=os.getchwd()
+CURRENT_DIR=os.getcwd()
 
 
 @dataclass
