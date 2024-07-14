@@ -24,11 +24,12 @@ def home():
 
 def predict():
     try:
-        if request=='POST':
-            data=request.json['accent']
-            accent=get_accent_tld
-            result= TTSapplication().text2speech(data,accent)
-            return {"data":result.decode("utf8")}
+         if request.method == 'POST':
+            data = request.json['data']
+            accent_input = request.json['accent']
+            accent = get_accent_tld(accent_input)
+            result = TTSapplication().text2speech(data, accent)
+            return {"data": result.decode("utf-8")}
     except Exception as e:
         raise TTSException(e,sys)
     
